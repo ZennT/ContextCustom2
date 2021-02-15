@@ -1,14 +1,14 @@
 To Do List Week-1 :
-    1 - Homepage test :
+    1 - Homepage Test :
         - Part/Division 1 --> create a feature file and verify some elements(title, logo, button...)
 
         - Part/Division 2 --> create a feature file and verify some elements(title, logo, button...)
 
-    2 - Login page test :
+    2 - Login Page Test :
         - Sign in
         - Sign up
 
-    3 - Categories :
+    3 - Categories Page Test:
         - Accessories
         - Hat
         - Home & Living
@@ -16,7 +16,7 @@ To Do List Week-1 :
         - Men's Clothing
         - Women's Clothing
 
-    4 - Design & Buy
+    4 - Design & Buy Page Test
         - Accessories
         - Hat
         - Home & Living
@@ -28,7 +28,19 @@ To Do List Week-1 :
         - Proceed to Checkout
 
     USA      : 1 and 3
+    - Ozen -1
+    - Esra -1
+    - Sukran -1
+    - Emine -3
+    - Mehmet -3
+    - Yasar -3
+
     Europe   : 2 and 4
+    - Kutluhan 2
+    - Muhammed 2
+    - Salih -4
+    - Semih -4
+
 
 
 
