@@ -1,0 +1,98 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-02-16T20:48:57.927Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7418175300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.cb.contextCustom.stepdef.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Verifying Kids \u0026 Youth Page",
+        "description": "",
+        "id": "kids-\u0026-youth-page-functionality;verifying-kids-\u0026-youth-page",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.cb.contextCustom.stepdef.Hooks.after(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 631405500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "move on to Categories",
+            "match": {
+              "location": "org.cb.contextCustom.stepdef.KidsAndYouthStepDef.move_on_to_Categories()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 290948600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "move to Kids\u0026Youth Clothing",
+            "match": {
+              "location": "org.cb.contextCustom.stepdef.KidsAndYouthStepDef.move_to_Kids_Youth_Clothing()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4371737400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "click on All Kids\u0026Youth Clothing",
+            "match": {
+              "location": "org.cb.contextCustom.stepdef.KidsAndYouthStepDef.click_on_All_Kids_Youth_Clothing()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 145391300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "verify Kids\u0026Youth Clothing page is displayed",
+            "match": {
+              "location": "org.cb.contextCustom.stepdef.KidsAndYouthStepDef.verify_Kids_Youth_Clothing_page_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Kids"
+          }
+        ]
+      }
+    ],
+    "name": "Kids \u0026 Youth Page Functionality",
+    "description": "",
+    "id": "kids-\u0026-youth-page-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/KidsAndYouth.feature",
+    "tags": []
+  }
+]
