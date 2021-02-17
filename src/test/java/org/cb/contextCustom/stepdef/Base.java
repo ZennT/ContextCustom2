@@ -58,6 +58,7 @@ public class Base {
 
     protected void verifyTheText(String expected, String actual) {
 //        Assert.assertEquals(expected, actual);
+//        Assert.assertEquals(expected.equalsIgnoreCase(actual)?  actual:expected1, actual );
         boolean verifyReturn;
         boolean verifyText = expected.equalsIgnoreCase(actual);
         if(verifyText){
@@ -68,5 +69,21 @@ public class Base {
     protected void click(WebElement webElement) {
         webElement.click();
     }
+
+    protected void textIsDisplayedAndEnabled(String expected, WebElement webElement) {
+        String actual;
+        actual = webElement.getText();
+        if(expected.equalsIgnoreCase(actual)){
+            Assert.assertEquals(expected, actual);
+            logger.info("{} is displayed.", expected);
+        }else logger.error("!!!Error...{} is not displayed.", expected);
+    }
+
+    protected void PictureIsDisplayedAndIsEnabled(WebElement webElement) {
+        if (webElement.isDisplayed() && webElement.isEnabled()) {
+            logger.info("This picture is displayed and enabled.");
+        }
+    }
+
 
 }
