@@ -4,8 +4,6 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.cb.contextCustom.pages.WomensClothing;
-import org.junit.Assert;
-import org.openqa.selenium.WebElement;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -21,6 +19,7 @@ public class WomensClothingSteps extends Base{
     @Then("move on to Women's Clothing sub-menu")
     public void moveOnToWomenSClothingSubMenu() {
         moveToElement(womensClothing.womenscloth);
+        waitSomeTime(1000L);
     }
 
     @And("move and click on All Women's Clothing")
@@ -31,7 +30,7 @@ public class WomensClothingSteps extends Base{
     @Then("verify that Women's Clothing text is present")
     public void verifyThatWomenSClothingTextIsPresent() {
         String expected = "Women's Clothing";
-        String actual = womensClothing.pageMapText.getText();
-        verifyTheText(actual, expected);
+        waitSomeTime(1000L);
+        textIsDisplayedAndEnabled(expected, womensClothing.womensClothingText);
     }
 }

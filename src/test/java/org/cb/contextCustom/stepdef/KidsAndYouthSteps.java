@@ -10,7 +10,7 @@ import org.slf4j.LoggerFactory;
 
 public class KidsAndYouthSteps extends Base{
     KidsAndYouth kidsAndYouth = new KidsAndYouth();
-    Logger logger = LoggerFactory.getLogger(WomensClothingSteps.class);
+    Logger logger = LoggerFactory.getLogger(KidsAndYouthSteps.class);
 
     @Given("User is in landing page and sign in")
     public void userIsInLandingPageAndSignIn() {
@@ -22,11 +22,6 @@ public class KidsAndYouthSteps extends Base{
         sendKeysValue(password, kidsAndYouth.password);
         click(kidsAndYouth.signInButton);
         waitSomeTime(1000L);
-    }
-
-    @When("move on to Categories dropdown menu Kids")
-    public void moveOnToCategoriesDropdownMenuKids() {
-        moveToElement(kidsAndYouth.categories);
     }
 
     @Then("move on to Kids&Youth Clothing sub-menu")
