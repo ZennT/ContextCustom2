@@ -16,7 +16,7 @@ public class Base {
     public Base() {
         PageFactory.initElements(MyDriver.get(), this);
     }
-    Logger logger = LoggerFactory.getLogger(WomensClothingSteps.class);
+    Logger logger = LoggerFactory.getLogger(Base.class);
 
 
     public static void waitSomeTime(Long milliSeconds){
@@ -79,7 +79,7 @@ public class Base {
         }else logger.error("!!!Error...{} is not displayed.", expected);
     }
 
-    protected void PictureIsDisplayedAndIsEnabled(WebElement webElement) {
+    protected void imageIsDisplayedAndEnabled(WebElement webElement) {
         if (webElement.isDisplayed() && webElement.isEnabled()) {
             logger.info("This picture is displayed and enabled.");
         }
