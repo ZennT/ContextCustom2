@@ -8,9 +8,22 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class KidsAndYouthPage extends Base {
+public class KidsAndYouth{
+    public KidsAndYouth(){
+        PageFactory.initElements(MyDriver.get(),this);
+    }
 
-    Actions action = new Actions(MyDriver.get());
+    @FindBy(xpath = "//div[@class='navbar-tool-text ml-n3']")
+    public WebElement signIn;
+
+    @FindBy(xpath = "//*[@id='id_username_reg_pg']")
+    public WebElement username;
+
+    @FindBy(xpath = "//input[@id='id_password_reg_pg']")
+    public WebElement password;
+
+    @FindBy(xpath = "//button[normalize-space()='Sign In']")
+    public WebElement signInButton;
 
     @FindBy(xpath = "(//a[@data-toggle='dropdown'])[1]")
     public WebElement categories;
@@ -22,13 +35,8 @@ public class KidsAndYouthPage extends Base {
     public WebElement allKids;
 
     @FindBy(xpath = "//li[@class='breadcrumb-item text-nowrap active']")
-    public WebElement imageOfText;
+    public WebElement KidsYouthClothingText;
 
-    public void moveOnToCategoriesDropdownMenu(){
-        moveToElement(categories);
-    }
 
-    public KidsAndYouthPage(){
-        PageFactory.initElements(MyDriver.get(),this);
-    }
+
 }

@@ -33,9 +33,5 @@ public class WomensClothingSteps extends Base{
         String expected = "Women's Clothing";
         String actual = womensClothing.pageMapText.getText();
         verifyTheText(actual, expected);
-//        boolean verifyText = verifyTheText(actual,expected);
-//        if(verifyText){
-//            logger.info("{} text is displayed.",actual);
-//        }else logger.info("{} is not displayed.",expected);
     }
 }
