@@ -16,7 +16,7 @@ public class Base {
     public Base() {
         PageFactory.initElements(MyDriver.get(), this);
     }
-    Logger logger = LoggerFactory.getLogger(WomensClothingSteps.class);
+    Logger logger = LoggerFactory.getLogger(Base.class);
 
 
     public static void waitSomeTime(Long milliSeconds){
@@ -58,7 +58,6 @@ public class Base {
 
     protected void verifyTheText(String expected, String actual) {
 //        Assert.assertEquals(expected, actual);
-//        Assert.assertEquals(expected.equalsIgnoreCase(actual)?  actual:expected1, actual );
         boolean verifyReturn;
         boolean verifyText = expected.equalsIgnoreCase(actual);
         if(verifyText){
@@ -73,17 +72,21 @@ public class Base {
     protected void textIsDisplayedAndEnabled(String expected, WebElement webElement) {
         String actual;
         actual = webElement.getText();
+//        System.out.println(actual);
         if(expected.equalsIgnoreCase(actual)){
             Assert.assertEquals(expected, actual);
             logger.info("{} is displayed.", expected);
         }else logger.error("!!!Error...{} is not displayed.", expected);
     }
 
-    protected void PictureIsDisplayedAndIsEnabled(WebElement webElement) {
+    protected void imageIsDisplayedAndEnabled(WebElement webElement) {
         if (webElement.isDisplayed() && webElement.isEnabled()) {
             logger.info("This picture is displayed and enabled.");
         }
     }
-
+    protected void sendKeysValue(String value, WebElement webElement) {
+        webElement.clear();
+        webElement.sendKeys(value);
+    }
 
 }

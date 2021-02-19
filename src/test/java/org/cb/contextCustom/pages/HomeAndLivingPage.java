@@ -5,22 +5,21 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class WomensClothing {
+public class HomeAndLivingPage {
 
-    public WomensClothing() {
-
-        PageFactory.initElements(MyDriver.get(), this);
+    public HomeAndLivingPage(){
+        PageFactory.initElements(MyDriver.get(),this);
     }
 
     @FindBy(xpath = "(//a[@data-toggle='dropdown'])[1]")
     public WebElement categories;
 
-    @FindBy(xpath = "(//a[@data-toggle='dropdown'])[7]")
-    public WebElement womenscloth;
+    @FindBy(xpath = "(//a[@class='dropdown-item dropdown-toggle'])[3]")
+    public WebElement homeAndLiving;
 
-    @FindBy(linkText = "All Women's Clothing")
-    public WebElement allWomen;
+    @FindBy(xpath = "//a[text()='All Home & Living']")
+    public WebElement allHomeAndLiving;
 
     @FindBy(xpath = "//li[@class='breadcrumb-item text-nowrap active']")
-    public WebElement womensClothingText;
+    public WebElement textOfHomeAndLiving;
 }
