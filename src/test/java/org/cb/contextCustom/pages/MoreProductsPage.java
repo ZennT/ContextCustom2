@@ -41,7 +41,7 @@ public class MoreProductsPage {
     @FindBy (xpath = "//a[@class='nav-link-style'][normalize-space()='Blankets']" )
     public WebElement blankets;
 
-    @FindBy (xpath = "//img[@alt='kids-youth-clothing']")   // buradaki attribute gore yani alt'in karsiligi olan kids-youth-clothing'i feature file da vermek lazim ki buna gore kiyas yapacaz
+    @FindBy (xpath = "//img[@alt='kids-youth-clothing']")
     public WebElement kidsYouthImage;
 
     @FindBy (xpath = "//h2[@class='h5']//a[contains(text(),'Kids & Youth Clothing')]")
