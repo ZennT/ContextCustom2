@@ -38,7 +38,7 @@ public class MoreProductsPage {
     @FindBy (xpath = "//h2[@class='h5']//a[contains(text(),'Home & Living')]" )
     public WebElement homeLiving;
 
-    @FindBy (xpath = "//a[@class='nav-link-style'][normalize-space()='Blankets']" )
+    @FindBy (xpath = "//a[@class='nav-link-style'][normalize-space()='Blankets']")
     public WebElement blankets;
 
     @FindBy (xpath = "//img[@alt='kids-youth-clothing']")
