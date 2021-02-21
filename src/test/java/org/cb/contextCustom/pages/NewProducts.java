@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class NewProducts {
+public class NewProducts  {
 
     public NewProducts() {
         PageFactory.initElements(MyDriver.get(), this);
