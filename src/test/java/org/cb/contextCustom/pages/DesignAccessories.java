@@ -17,7 +17,6 @@ public class DesignAccessories {
     @FindBy(xpath = "//input[@id='id_username_reg_pg']")
     public WebElement username;
 
-
     @FindBy(xpath = "//input[@id='id_password_reg_pg']")
     public WebElement password;
 
@@ -45,8 +44,41 @@ public class DesignAccessories {
     @FindBy(xpath = "//button[@id='add-text']")
     public WebElement addTextButton;
 
+
+
+    @FindBy(xpath = "//div[@data-original-title='Text Color']//div[@class='sp-dd'][contains(text(),'▼')]")
+    public WebElement textColor;
+    @FindBy(xpath = "//div[@class='sp-container sp-light sp-alpha-enabled sp-clear-enabled']//div[@class='sp-palette-container']//span[@title='#2986cc']//span[@class='sp-thumb-inner']")
+    public WebElement blueSelect;
+
+
+    @FindBy(xpath = "//div[@data-original-title='Outline']//div[@class='sp-dd'][contains(text(),'▼')]")
+    public WebElement outLine;
+    @FindBy(xpath = "//div[@class='sp-container sp-light sp-alpha-enabled sp-clear-enabled']//span[@title='#f44336']//span[@class='sp-thumb-inner']")
+    public WebElement outLineSelect;
+
+
+    @FindBy(xpath = "//div[@data-original-title='Shadow']//div[@class='sp-dd'][contains(text(),'▼')]")
+    public WebElement shadow;
+    @FindBy(xpath = "//div[@class='sp-container sp-light sp-alpha-enabled sp-clear-enabled']//span[@title='black']//span[@class='sp-thumb-inner']")
+    public WebElement blackSelect;
+
+
+    @FindBy(xpath = "//select[@id='font-family']")
+    public WebElement fontFamily;
+    @FindBy(xpath = "//select[@id='font-family']//option[@value=\"Oswald\"]")
+    public WebElement oswaldFont;
+
+
+    @FindBy(xpath = "//select[@id='id_quantity']")
+    public WebElement howMany;
+    @FindBy(xpath = "//select[@id='id_quantity']//option[@value=10]")
+    public WebElement quantity;
     @FindBy(xpath = "//input[@id='addtocartButton']")
     public WebElement addToCartButton;
+
+    @FindBy(xpath = "//h1[normalize-space()='Your cart']")
+    public WebElement cart;
 
 
 

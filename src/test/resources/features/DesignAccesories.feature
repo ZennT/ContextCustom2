@@ -8,3 +8,8 @@ Feature: Verifying the Design and Buy page
     And move on to All accessories button and click
     And selects the first product in the page
     And clicks on Start Designing button
+    And selecting text color, outline shadow and font
+    And select The oswald font And Verify
+    And select The quantity And Verify
+    And User verifies that cart heading is present
+
