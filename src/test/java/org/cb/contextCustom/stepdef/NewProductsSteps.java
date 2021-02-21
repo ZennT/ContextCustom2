@@ -87,17 +87,6 @@ public class NewProductsSteps extends Base {
         else logger.warn("Error");
     }
 
-    @Then("Moves to Embroidered Apron")
-    public void movesToEmbroideredApron() {
-        moveToElement(newProducts.apron);
-        logger.info("Moves to Embroidered Apron");
-        waitSomeTime(5000L);
-    }
-
-    @Then("Verifies that Design & Buy button is present")
-    public void verifiesThatDesignBuyButtonIsPresent() {
-        imageIsDisplayedAndEnabled(newProducts.embroideredApronDesignButton);
-    }
 
     @Then("Moves to Unisex Sponge Fleece Drop Shoulder Sweatshirt")
     public void movesToUnisexSpongeFleeceDropShoulderSweatshirt() {
@@ -105,6 +94,7 @@ public class NewProductsSteps extends Base {
         logger.info("Moves to Unisex Sponge Fleece Drop Shoulder Sweatshirt");
         waitSomeTime(5000L);
     }
+
     @Then("Verifies that Sweatshirt Design & Buy button is present")
     public void verifiesThatSweatshirtDesignBuyButtonIsPresent() {
         imageIsDisplayedAndEnabled(newProducts.unisexSpongeFleeceDesignButton);
@@ -116,6 +106,7 @@ public class NewProductsSteps extends Base {
         logger.info("Moves to Baby Jersey Short Sleeve One Piece");
         waitSomeTime(3000L);
     }
+
     @Then("Verifies that Baby Jersey Design & Buy button is present")
     public void verifiesThatBabyJerseyDesignBuyButtonIsPresent() {
         imageIsDisplayedAndEnabled(newProducts.babyJerseyDesignButton);
@@ -131,6 +122,17 @@ public class NewProductsSteps extends Base {
     @Then("Verifies that V Neck Tee Design & Buy button is present")
     public void verifiesThatVNeckTeeDesignBuyButtonIsPresent() {
         imageIsDisplayedAndEnabled(newProducts.unisexVNeckTeeDesignButton);
+    }
+    @Then("Moves to Embroidered Apron")
+    public void movesToEmbroideredApron() {
+        moveToElement(newProducts.apron);
+        logger.info("Moves to Embroidered Apron");
+        waitSomeTime(5000L);
+    }
+
+    @Then("Verifies that Apron Design & Buy button is present")
+    public void verifiesThatApronDesignBuyButtonIsPresent() {
+        imageIsDisplayedAndEnabled(newProducts.embroideredApronDesignButton);
     }
 
     @And("Clicks on More Products button")
