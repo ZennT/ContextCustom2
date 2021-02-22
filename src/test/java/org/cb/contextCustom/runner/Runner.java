@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
         glue = "org/cb/contextCustom/stepdef",
         dryRun =false,
         strict = false,
-        tags = "@Accessories",
+        tags = "@Home&Living",
         plugin = {"pretty",
                 "html:target/default-cucumber-reports",
                 "json:target/cucumber.json"

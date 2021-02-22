@@ -7,6 +7,10 @@ import org.openqa.selenium.support.PageFactory;
 
 public class HatsPage {
 
+    public HatsPage(){
+        PageFactory.initElements(MyDriver.get(),this);
+    }
+
     @FindBy(linkText = "Hats")
     public WebElement hats;
 
@@ -16,8 +20,18 @@ public class HatsPage {
     @FindBy(xpath = "//li[@class='breadcrumb-item text-nowrap active']")
     public WebElement textOfHats;
 
-    public HatsPage(){
-        PageFactory.initElements(MyDriver.get(),this);
+    @FindBy(xpath = "(//img[@alt='Product'])[1]")
+    public WebElement cuffedBeanieImage;
 
-    }
+    @FindBy(xpath = "(//a[text()='Context'])[1]")
+    public WebElement cuffedBeanieBrand;
+
+    @FindBy(linkText = "Cuffed Beanie | Context B110")
+    public WebElement cuffedBeanieText;
+
+    @FindBy(xpath = "//span[text()='$4.50']")
+    public WebElement cuffedBeaniePrice;
+
+
+
 }

@@ -22,4 +22,17 @@ public class HomeAndLivingPage {
 
     @FindBy(xpath = "//li[@class='breadcrumb-item text-nowrap active']")
     public WebElement textOfHomeAndLiving;
+
+    @FindBy(xpath = "(//img[@alt='Product'])[1]")
+    public WebElement ceramicMugImage;
+
+    @FindBy(xpath = "//a[@class='product-meta d-block font-size-xs pb-1 center']")
+    public WebElement ceramicMugBrand;
+
+    @FindBy(linkText = "Ceramic Mug | Context")
+    public WebElement ceramicMugText;
+
+    @FindBy(xpath = "//span[text()='$6.49']")
+    public WebElement ceramicMugPrice;
+
 }
