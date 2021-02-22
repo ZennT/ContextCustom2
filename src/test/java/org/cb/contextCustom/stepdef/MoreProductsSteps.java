@@ -13,11 +13,11 @@ public class MoreProductsSteps extends Base {
     MoreProductsPage moreProductsPage = new MoreProductsPage();
     Logger logger = LoggerFactory.getLogger(MoreProductsSteps.class);
 
-    @Given("User is on landing page")
-    public void userIsOnLandingPage() {
-        MyDriver.get().get(ConfigurationReader.getProperty("baseUrl"));
-        logger.info("User is on Landing Page");
-    }
+//    @Given("User is on landing page")
+//    public void userIsOnLandingPage() {
+//        MyDriver.get().get(ConfigurationReader.getProperty("baseUrl"));
+//        logger.info("User is on Landing Page");
+//    }
 
     @Then("User verifies that More products button is present")
     public void userVerifiesThatMoreProductsButtonIsPresent() {
