@@ -23,4 +23,8 @@ public class WomensClothing {
 
     @FindBy(xpath = "//li[@class='breadcrumb-item text-nowrap active']")
     public WebElement womensClothingText;
+
+
+
+
 }
