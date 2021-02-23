@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class ProductsPage {
+public class Products {
 
-    public ProductsPage() {
+    public Products() {
         PageFactory.initElements(MyDriver.get(), this);
     }
 
@@ -38,10 +38,10 @@ public class ProductsPage {
     @FindBy (xpath = "//h2[@class='h5']//a[contains(text(),'Home & Living')]" )
     public WebElement homeLiving;
 
-    @FindBy (xpath = "//a[@class='nav-link-style'][normalize-space()='Blankets']")
+    @FindBy (xpath = "//a[@class='nav-link-style'][normalize-space()='Blankets']" )
     public WebElement blankets;
 
-    @FindBy (xpath = "//img[@alt='kids-youth-clothing']")
+    @FindBy (xpath = "//img[@alt='kids-youth-clothing']")   // buradaki attribute gore yani alt'in karsiligi olan kids-youth-clothing'i feature file da vermek lazim ki buna gore kiyas yapacaz
     public WebElement kidsYouthImage;
 
     @FindBy (xpath = "//h2[@class='h5']//a[contains(text(),'Kids & Youth Clothing')]")
@@ -57,10 +57,10 @@ public class ProductsPage {
     public WebElement mensClothing;
 
     //(//h2[@class='h5'][contains(text(),'Men's Clothing')])[5]
+    //(//h2[@class='h5']//a[contains(text(),'Women's Clothing')])[3]
 
     @FindBy (xpath = "(//a[@class='nav-link-style'][contains(text(),'Bottoms')])[1]")
     public WebElement bottomsM;
-
 
     @FindBy (xpath = "//img[@alt='womens-clothing']")
     public WebElement womensClothingImage;
@@ -73,8 +73,9 @@ public class ProductsPage {
 
     @FindBy (xpath = "(//a[@class='nav-link-style'][contains(text(),'Bottoms')])[2]")
     public WebElement bottomsW;
-
-
+//
+//    @FindBy (xpath = "//li[@class='breadcrumb-item text-nowrap active']")
+//    public WebElement verifyBackpacks;
 
 
 

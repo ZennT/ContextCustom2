@@ -1,49 +1,41 @@
 package org.cb.contextCustom.stepdef;
 
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import org.cb.contextCustom.pages.ProductsPage;
-import org.cb.contextCustom.utils.ConfigurationReader;
-import org.cb.contextCustom.utils.MyDriver;
+import io.cucumber.java.en.When;
+import org.cb.contextCustom.pages.Products;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class ProductsSteps extends Base {
-    ProductsPage productsPage = new ProductsPage();
+    Products products = new Products();
     Logger logger = LoggerFactory.getLogger(ProductsSteps.class);
 
-    @Given("User is on landing page")
-    public void userIsOnLandingPage() {
-        MyDriver.get().get(ConfigurationReader.getProperty("baseUrl"));
-        logger.info("User is on Landing Page");
-    }
-
-    @Then("User verifies that More products button is present")
-    public void userVerifiesThatMoreProductsButtonIsPresent() {
-        productsPage.moreProductsButton.isDisplayed();
+    @When("User navigate and verifies that More products button is present")
+    public void userNavigateAndVerifiesThatMoreProductsButtonIsPresent() {
+        products.moreProductsButton.isDisplayed();
         logger.info("More products button is displayed");
     }
 
     @Then("User verifies that {string} is displayed")
     public void userVerifiesThatIsDisplayed(String value) {  // image
 
-        if (value.equals(productsPage.accessoriesImage.getAttribute("alt"))) {
-            imageIsDisplayedAndEnabled(productsPage.accessoriesImage);
+        if (value.equals(products.accessoriesImage.getAttribute("alt"))) {
+            imageIsDisplayedAndEnabled(products.accessoriesImage);
 
-        }else if (value.equals(productsPage.hatImage.getAttribute("alt"))){
-            imageIsDisplayedAndEnabled(productsPage.hatImage);
+        } else if (value.equals(products.hatImage.getAttribute("alt"))) {
+            imageIsDisplayedAndEnabled(products.hatImage);
 
-        }else if (value.equals(productsPage.homeLivingImage.getAttribute("alt"))){
-            imageIsDisplayedAndEnabled(productsPage.homeLivingImage);
+        } else if (value.equals(products.homeLivingImage.getAttribute("alt"))) {
+            imageIsDisplayedAndEnabled(products.homeLivingImage);
 
-        }else if (value.equals(productsPage.kidsYouthImage.getAttribute("alt"))){
-            imageIsDisplayedAndEnabled(productsPage.kidsYouthImage);
+        } else if (value.equals(products.kidsYouthImage.getAttribute("alt"))) {
+            imageIsDisplayedAndEnabled(products.kidsYouthImage);
 
-        }else if (value.equals(productsPage.mensClothingImage.getAttribute("alt"))){
-            imageIsDisplayedAndEnabled(productsPage.mensClothingImage);
+        } else if (value.equals(products.mensClothingImage.getAttribute("alt"))) {
+            imageIsDisplayedAndEnabled(products.mensClothingImage);
 
-        }else if (value.equals(productsPage.womensClothingImage.getAttribute("alt"))){
-            imageIsDisplayedAndEnabled(productsPage.womensClothingImage);
+        } else if (value.equals(products.womensClothingImage.getAttribute("alt"))) {
+            imageIsDisplayedAndEnabled(products.womensClothingImage);
 
         } else {
             logger.warn("Failed");
@@ -53,35 +45,57 @@ public class ProductsSteps extends Base {
     @Then("User verifies that {string} heading is present")
     public void userVerifiesThatHeadingIsPresent(String value) {
 
-        if(value.equals(productsPage.accessories.getText())){
-            textIsDisplayedAndEnabled("Accessories", productsPage.accessories);
+        if (value.equals(products.accessories.getText())) {
+            textIsDisplayedAndEnabled("Accessories", products.accessories);
 
-        }else if (value.equals(productsPage.hats.getText())){
-            textIsDisplayedAndEnabled("Hats", productsPage.hats);
+        } else if (value.equals(products.hats.getText())) {
+            textIsDisplayedAndEnabled("Hats", products.hats);
 
-        }else if (value.equals(productsPage.homeLiving.getText())){
-            textIsDisplayedAndEnabled("Home & Living", productsPage.homeLiving);
+        } else if (value.equals(products.homeLiving.getText())) {
+            textIsDisplayedAndEnabled("Home & Living", products.homeLiving);
 
-        }else if (value.equals(productsPage.kidsYouthClothing.getText())){
-            textIsDisplayedAndEnabled("Kids & Youth Clothing", productsPage.kidsYouthClothing);
+        } else if (value.equals(products.kidsYouthClothing.getText())) {
+            textIsDisplayedAndEnabled("Kids & Youth Clothing", products.kidsYouthClothing);
 
-        }else if (value.equals(productsPage.mensClothing.getText())){
-            textIsDisplayedAndEnabled("Men's Clothing", productsPage.mensClothing);
+        } else if (value.equals(products.mensClothing.getText())) {
+            textIsDisplayedAndEnabled("Men's Clothing", products.mensClothing);
 
-        }else if (value.equals(productsPage.womensClothing.getText())){
-            textIsDisplayedAndEnabled("Women's Clothing", productsPage.womensClothing);
-            click(productsPage.womensClothing);
-          textIsDisplayedAndEnabled("Women's Clothing",productsPage.verifyWomensClothingText);
-        }
-
-        else{
+        } else if (value.equals(products.womensClothing.getText())) {
+            textIsDisplayedAndEnabled("Women's Clothing", products.womensClothing);
+            click(products.womensClothing);
+            textIsDisplayedAndEnabled("Women's Clothing", products.verifyWomensClothingText);
+        } else {
             logger.warn("Failed");
         }
-
     }
 
 
     @Then("User verifies that {string} menu is present")
-    public void userVerifiesThatMenuIsPresent(String arg0) {
+    public void userVerifiesThatMenuIsPresent(String value) {
+
+        if (value.equals(products.backpacks.getText())) {
+            textIsDisplayedAndEnabled("Backpacks", products.backpacks);
+
+        } else if (value.equals(products.beanies.getText())) {
+            textIsDisplayedAndEnabled("Beanies", products.beanies);
+
+        } else if (value.equals(products.blankets.getText())) {
+            textIsDisplayedAndEnabled("Blankets", products.blankets);
+
+        } else if (value.equals(products.babybibs.getText())) {
+            textIsDisplayedAndEnabled("Baby Bibs", products.babybibs);
+
+        } else if (value.equals(products.bottomsM.getText())) {
+            textIsDisplayedAndEnabled("Bottoms", products.bottomsM);
+
+        } else if (value.equals(products.bottomsW.getText())) {
+            textIsDisplayedAndEnabled("Bottoms", products.bottomsW);
+//            click(productsPage.bottomsW);
+          //  textIsDisplayedAndEnabled("Bottoms", productsPage.bottomsW);
+
+        } else {
+            logger.warn("Failed");
+        }
     }
+
 }
