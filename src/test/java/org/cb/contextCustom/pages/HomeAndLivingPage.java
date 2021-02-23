@@ -5,11 +5,17 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.List;
+
 public class HomeAndLivingPage {
 
     public HomeAndLivingPage(){
         PageFactory.initElements(MyDriver.get(),this);
     }
+
+    @FindBy(tagName = "a")
+    public List<WebElement> allLinks;
+
 
     @FindBy(xpath = "(//a[@data-toggle='dropdown'])[1]")
     public WebElement categories;

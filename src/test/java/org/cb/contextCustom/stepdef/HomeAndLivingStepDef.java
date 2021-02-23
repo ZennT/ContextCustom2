@@ -4,6 +4,9 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.cb.contextCustom.pages.HomeAndLivingPage;
+import org.openqa.selenium.WebElement;
+
+import java.util.List;
 
 public class HomeAndLivingStepDef extends Base {
 
@@ -55,5 +58,17 @@ public class HomeAndLivingStepDef extends Base {
 
     @And("click  Ceramic Mug item picture")
     public void clickCeramicMugItemPicture() {
+    }
+
+    @And("print all links from the current page")
+    public void printAllLinksFromTheCurrentPage() {
+        System.out.println("The number of the links on this page "+homeAndLivingPage.allLinks.size());
+        for (WebElement link:homeAndLivingPage.allLinks) {
+            String fullLink= link.getAttribute("href");
+            String linkText=link.getText();
+            if(!linkText.isEmpty()){
+                System.out.println(linkText+"          "+fullLink);
+            }
+        }
     }
 }

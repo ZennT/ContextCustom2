@@ -11,5 +11,6 @@ Feature:Home & Living Page Functionality
     And verify  Ceramic Mug item brand name is present
     Then verify Ceramic Mug item text is present
     And verify Ceramic Mug item price is present
+    And print all links from the current page
     And click  Ceramic Mug item picture
 #    Then verify Ceramic Mug item name is present
