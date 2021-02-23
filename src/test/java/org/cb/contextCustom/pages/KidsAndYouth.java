@@ -40,7 +40,7 @@ public class KidsAndYouth{
     @FindBy(xpath = "(//img[@alt='Product'])[1]")
     public WebElement firstItemImage;
 
-    @FindBy(xpath = "(//div[@class='card-body py-2'])[1]")
+    @FindBy(xpath = "(//div[@class='card-body py-2']//a)[1]")
     public WebElement firstItemBrandName;
 
     @FindBy(xpath = "(//h3[@class='product-title font-size-sm']//a)[1]")

@@ -1,5 +1,5 @@
 Feature:Kids & Youth Page Functionality
-#  @Kids
+  @Kids
   Scenario:Navigating and Verifying Kids & Youth Page
     Given User is in landing page and sign in
     When move on to Categories dropdown menu
