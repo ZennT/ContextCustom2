@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class MoreProductsPage {
+public class ProductsPage {
 
-    public MoreProductsPage() {
+    public ProductsPage() {
         PageFactory.initElements(MyDriver.get(), this);
     }
 
@@ -67,6 +67,9 @@ public class MoreProductsPage {
 
     @FindBy (xpath = "//div[6]//div[1]//div[1]//h2[1]//a[1]")
     public WebElement womensClothing;
+
+    @FindBy (xpath= "//li[@class='breadcrumb-item text-nowrap active']")
+    public WebElement verifyWomensClothingText;
 
     @FindBy (xpath = "(//a[@class='nav-link-style'][contains(text(),'Bottoms')])[2]")
     public WebElement bottomsW;

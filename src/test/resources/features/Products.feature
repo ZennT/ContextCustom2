@@ -1,6 +1,6 @@
 Feature: Verifying the MainPage
 
-  @MoreProducts
+  @Products
   Scenario: MoreProducts verification
     Given User is on landing page
 
