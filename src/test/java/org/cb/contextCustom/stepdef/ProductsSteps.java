@@ -10,6 +10,7 @@ public class ProductsSteps extends Base {
     Products products = new Products();
     Logger logger = LoggerFactory.getLogger(ProductsSteps.class);
 
+
     @When("User navigate and verifies that More products button is present")
     public void userNavigateAndVerifiesThatMoreProductsButtonIsPresent() {
         products.moreProductsButton.isDisplayed();
