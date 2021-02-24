@@ -4,7 +4,8 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class MainPageTwoSteps {
+public class MainPageTwoSteps extends Base {
+
     @When("Verifies that Search icon is present and enabled")
     public void verifiesThatSearchIconIsPresentAndEnabled() {
     }

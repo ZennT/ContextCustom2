@@ -6,3 +6,5 @@ Feature: Verifying the Main Page
     And Verify that "How It Works?" is present
     And Verify that "Free Mockups" is present
     Then Verify that "Buy Designs" is present
+
+
