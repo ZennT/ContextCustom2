@@ -14,11 +14,10 @@ public class MainPageCustomPrintSteps {
     public void verifiesThatButtonIsDisplayedAndEnabled(String arg0) {
     }
 
-    @Then("Verifies that {string} button is present")
-    public void verifiesThatButtonIsPresent(String arg0) {
-    }
 
     @And("Verifies that images are present")
     public void verifiesThatImagesArePresent() {
     }
+
+
 }
