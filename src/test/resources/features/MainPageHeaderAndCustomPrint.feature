@@ -24,15 +24,14 @@ Feature: MainPage Header and Custom Print Verification
 
     Examples:
       | Header elements       | Custom Print elements |
-      | logo                  | customPrintHeading    |
-      | howItWorks            | printAndShip          |
-      | freeMockups           | supplyFromYouText     |
-      | buyDesigns            | makeAnOrderButton     |
-      | searchIcon            | bringYourTee          |
-      | myAccount             | customizeYourselfText |
-      | cartIcon              | printNowButton        |
-      | myCart                | makeAnOrderImage      |
-      | myCart                | printNowImage         |
+      | How It Works?         | We'll print & ship it for you!          |
+      | Free Mockups          | Custom printed & embroidered products    |
+      | Buy Designs           | Make an Order     |
+      | Search                | Bring Your Own Tee          |
+      | My Account            | Shop Converse         |
+      | cartIcon              | Bring Your Own Tee        |
+      | My Cart               | Shop Converse     |
+
 
 
 

@@ -43,18 +43,18 @@ public class MainPageHeaderAndCustomPrintSteps extends Base {
             else if(value.equals(mainPageHeaderAndCustomPrint.myCart.getText())) {
                 textIsDisplayedAndEnabled("My Cart", mainPageHeaderAndCustomPrint.myCart);
             }
-            else if(value.equals(mainPageHeaderAndCustomPrint.customizeYourselfText.getText())){
-                textIsDisplayedAndEnabled("Customize for yourself or for your customers", mainPageHeaderAndCustomPrint.customizeYourselfText);
-            }
+//            else if(value.equals(mainPageHeaderAndCustomPrint.customizeYourselfText.getText())){
+//                textIsDisplayedAndEnabled("Customize for yourself or for your customers", mainPageHeaderAndCustomPrint.customizeYourselfText);
+//            }
             else if(value.equals(mainPageHeaderAndCustomPrint.customPrintHeading.getText())){
                 textIsDisplayedAndEnabled("Custom printed & embroidered products", mainPageHeaderAndCustomPrint.customPrintHeading);
             }
             else if(value.equals(mainPageHeaderAndCustomPrint.printAndShip.getText())){
                 textIsDisplayedAndEnabled("We'll print & ship it for you!", mainPageHeaderAndCustomPrint.printAndShip);
             }
-            else if(value.equals(mainPageHeaderAndCustomPrint.supplyFromYouText.getText())){
-                textIsDisplayedAndEnabled("Supply from you print from us", mainPageHeaderAndCustomPrint.supplyFromYouText);
-            }
+//            else if(value.equals(mainPageHeaderAndCustomPrint.supplyFromYouText.getText())){
+//                textIsDisplayedAndEnabled("Supply from you print from us", mainPageHeaderAndCustomPrint.supplyFromYouText);
+//            }
             else if(value.equals(mainPageHeaderAndCustomPrint.bringYourTee.getText())){
                 textIsDisplayedAndEnabled("Bring Your Own Tee", mainPageHeaderAndCustomPrint.bringYourTee);
             }

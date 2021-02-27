@@ -37,8 +37,8 @@ public class MainPageHeaderAndCustomPrint {
     @FindBy(xpath = "//a[@class='navbar-tool-text']")
     public WebElement myCart;
 
-    @FindBy(xpath = "//h4[normalize-space()='Customize for yourself or for your customers']")
-    public WebElement customizeYourselfText;
+//    @FindBy(xpath = "//h4[normalize-space()='Customize for yourself or for your customers']")
+//    public WebElement customizeYourselfText;
 
     @FindBy(xpath = "//h1[normalize-space()='Custom printed & embroidered products']")
     public WebElement customPrintHeading;
@@ -46,8 +46,8 @@ public class MainPageHeaderAndCustomPrint {
     @FindBy(xpath = "//h3[normalize-space()=\"We'll print & ship it for you!\"]")
     public WebElement printAndShip;
 
-    @FindBy(xpath = "//h4[normalize-space()='Supply from you print from us']")
-    public WebElement supplyFromYouText;
+//    @FindBy(xpath = "//h4[normalize-space()='Supply from you print from us']")
+//    public WebElement supplyFromYouText;
 
     @FindBy(xpath = "//h3[normalize-space()='Bring Your Own Tee']")
     public WebElement bringYourTee;
