@@ -15,9 +15,9 @@ public class MainPageCustomPrintSteps extends Base {
         String actual = mainPageCustomPrint.customPrintHeading.getText();
         verifyTheText(actual,expected);
 
-        expected = "Order custom design products for yourself or sell them online under your own brand";
-        actual = mainPageCustomPrint.customPrintSubheading.getText();
-        verifyTheText(actual,expected);
+//        expected = "Order custom design products for yourself or sell them online under your own brand";
+//        actual = mainPageCustomPrint.customPrintSubheading.getText();
+//        verifyTheText(actual,expected);
 
 
     }

@@ -5,20 +5,43 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class MainPageCustomPrint {
+public class MainPageHeaderAndCustomPrint {
 
-    public MainPageCustomPrint(){
-        PageFactory.initElements(MyDriver.get(),this);
+    public MainPageHeaderAndCustomPrint() {
+
+        PageFactory.initElements(MyDriver.get(), this);
     }
+
+
+    @FindBy(xpath = "//a[@class='navbar-brand d-none d-sm-block mr-4 order-lg-1']//img[1]")
+    public WebElement logo;
+
+    @FindBy(xpath = "//a[normalize-space()='How It Works?']")
+    public WebElement howItWorks;
+
+    @FindBy(xpath ="//a[normalize-space()='Free Mockups']" )
+    public WebElement freeMockups;
+
+    @FindBy(xpath = "//a[normalize-space()='Buy Designs']")
+    public WebElement buyDesigns;
+
+    @FindBy(xpath = "//i[@class='navbar-tool-icon czi-search']")
+    public WebElement searchIcon;
+
+    @FindBy(xpath = "//div[@class='navbar-tool-text ml-n3']")
+    public WebElement myAccount;
+
+    @FindBy(xpath = "//i[@class='navbar-tool-icon czi-cart']")
+    public WebElement cartIcon;
+
+    @FindBy(xpath = "//a[@class='navbar-tool-text']")
+    public WebElement myCart;
+
+    @FindBy(xpath = "//h4[normalize-space()='Customize for yourself or for your customers']")
+    public WebElement customizeYourselfText;
 
     @FindBy(xpath = "//h1[normalize-space()='Custom printed & embroidered products']")
     public WebElement customPrintHeading;
-
-//    @FindBy(xpath = "//h5[contains(text(),'Order custom design products for yourself or sell ')]")
-//    public WebElement customPrintSubheading;
-//
-    @FindBy(xpath = "//h4[normalize-space()='Customize for yourself or for your customers']")
-    public WebElement customizeYourselfText;
 
     @FindBy(xpath = "//h3[normalize-space()=\"We'll print & ship it for you!\"]")
     public WebElement printAndShip;
@@ -40,7 +63,5 @@ public class MainPageCustomPrint {
 
     @FindBy(xpath = "//div[@class='row my-4']//div[1]//div[1]//img[1]")
     public WebElement printNowImage;
-
-
 
 }
