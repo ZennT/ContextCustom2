@@ -27,35 +27,35 @@ public class MainPageHeaderAndCustomPrintSteps extends Base {
     @When("Verifies that {string} are present")
     public void verifiesThatArePresent(String value) {
 
-            if(value.equalsIgnoreCase(mainPageHeaderAndCustomPrint.howItWorks.getText())){
-            textIsDisplayedAndEnabled(value,mainPageHeaderAndCustomPrint.howItWorks);
+            if(value.equals(mainPageHeaderAndCustomPrint.howItWorks.getText())){
+                textIsDisplayedAndEnabled("How It Works", mainPageHeaderAndCustomPrint.howItWorks);
             }
-            else if(value.equalsIgnoreCase(mainPageHeaderAndCustomPrint.freeMockups.getText())){
-            textIsDisplayedAndEnabled(value, mainPageHeaderAndCustomPrint.freeMockups);
+            else if(value.equals(mainPageHeaderAndCustomPrint.freeMockups.getText())){
+            textIsDisplayedAndEnabled("Free Mockups", mainPageHeaderAndCustomPrint.freeMockups);
             }
-            else if(value.equalsIgnoreCase(mainPageHeaderAndCustomPrint.buyDesigns.getText())) {
-                textIsDisplayedAndEnabled(value, mainPageHeaderAndCustomPrint.buyDesigns);
+            else if(value.equals(mainPageHeaderAndCustomPrint.buyDesigns.getText())) {
+                textIsDisplayedAndEnabled("Buy Designs", mainPageHeaderAndCustomPrint.buyDesigns);
             }
-            else if(value.equalsIgnoreCase(mainPageHeaderAndCustomPrint.myAccount.getText())){
-            textIsDisplayedAndEnabled(value, mainPageHeaderAndCustomPrint.myAccount);
+            else if(value.equals(mainPageHeaderAndCustomPrint.myAccount.getText())){
+                textIsDisplayedAndEnabled("My Account", mainPageHeaderAndCustomPrint.myAccount);
             }
-            else if(value.equalsIgnoreCase(mainPageHeaderAndCustomPrint.myCart.getText())) {
-                textIsDisplayedAndEnabled(value, mainPageHeaderAndCustomPrint.myCart);
+            else if(value.equals(mainPageHeaderAndCustomPrint.myCart.getText())) {
+                textIsDisplayedAndEnabled("My Cart", mainPageHeaderAndCustomPrint.myCart);
             }
-            else if(value.equalsIgnoreCase(mainPageHeaderAndCustomPrint.customizeYourselfText.getText())){
-            textIsDisplayedAndEnabled(value, mainPageHeaderAndCustomPrint.customizeYourselfText);
+            else if(value.equals(mainPageHeaderAndCustomPrint.customizeYourselfText.getText())){
+                textIsDisplayedAndEnabled("Customize for yourself or for your customers", mainPageHeaderAndCustomPrint.customizeYourselfText);
             }
-            else if(value.equalsIgnoreCase(mainPageHeaderAndCustomPrint.customPrintHeading.getText())){
-            textIsDisplayedAndEnabled(value, mainPageHeaderAndCustomPrint.customPrintHeading);
+            else if(value.equals(mainPageHeaderAndCustomPrint.customPrintHeading.getText())){
+                textIsDisplayedAndEnabled("Custom printed & embroidered products", mainPageHeaderAndCustomPrint.customPrintHeading);
             }
-            else if(value.equalsIgnoreCase(mainPageHeaderAndCustomPrint.printAndShip.getText())){
-            textIsDisplayedAndEnabled(value, mainPageHeaderAndCustomPrint.printAndShip);
+            else if(value.equals(mainPageHeaderAndCustomPrint.printAndShip.getText())){
+                textIsDisplayedAndEnabled("We'll print & ship it for you!", mainPageHeaderAndCustomPrint.printAndShip);
             }
-            else if(value.equalsIgnoreCase(mainPageHeaderAndCustomPrint.supplyFromYouText.getText())){
-            textIsDisplayedAndEnabled(value, mainPageHeaderAndCustomPrint.supplyFromYouText);
+            else if(value.equals(mainPageHeaderAndCustomPrint.supplyFromYouText.getText())){
+                textIsDisplayedAndEnabled("Supply from you print from us", mainPageHeaderAndCustomPrint.supplyFromYouText);
             }
-            else if(value.equalsIgnoreCase(mainPageHeaderAndCustomPrint.bringYourTee.getText())){
-            textIsDisplayedAndEnabled(value, mainPageHeaderAndCustomPrint.bringYourTee);
+            else if(value.equals(mainPageHeaderAndCustomPrint.bringYourTee.getText())){
+                textIsDisplayedAndEnabled("Bring Your Own Tee", mainPageHeaderAndCustomPrint.bringYourTee);
             }
 
             imageIsDisplayedAndEnabled(mainPageHeaderAndCustomPrint.cartIcon);

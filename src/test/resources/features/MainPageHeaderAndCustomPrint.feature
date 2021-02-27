@@ -15,7 +15,7 @@ Feature: MainPage Header and Custom Print Verification
 #    And  Verifies that "My Cart" is present
 
     And   Verifies that "<Custom Print elements>" are present
-    Given User verifies that heading and subheading are present
+#    Given User verifies that heading and subheading are present
 #    When  Verifies that Make an Order is present
 #    And   Verifies that Print Now is present
 
@@ -29,10 +29,10 @@ Feature: MainPage Header and Custom Print Verification
       | freeMockups           | supplyFromYouText     |
       | buyDesigns            | makeAnOrderButton     |
       | searchIcon            | bringYourTee          |
-      | myAccount             | makeAnOrderButton     |
+      | myAccount             | customizeYourselfText |
       | cartIcon              | printNowButton        |
       | myCart                | makeAnOrderImage      |
-      | customizeYourselfText | printNowImage         |
+      | myCart                | printNowImage         |
 
 
 
