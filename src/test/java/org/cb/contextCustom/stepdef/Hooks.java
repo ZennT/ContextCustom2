@@ -22,7 +22,7 @@ public class Hooks {
     @Before
     public void setup() {
         logger.info("##### SETUP STARTED (HOOK) ######");
-       // MyDriver.get().manage().window().maximize();
+        MyDriver.get().manage().window().maximize();
         // We can resize our browser with the following codes.
 //        MyDriver.get().manage().window().setSize(new Dimension(1350,768));
 

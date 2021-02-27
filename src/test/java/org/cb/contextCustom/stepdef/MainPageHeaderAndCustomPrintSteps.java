@@ -26,6 +26,7 @@ public class MainPageHeaderAndCustomPrintSteps extends Base {
 
     @When("Verifies that {string} are present")
     public void verifiesThatArePresent(String value) {
+            waitSomeTime(3000L);
 
             if(value.equals(mainPageHeaderAndCustomPrint.howItWorks.getText())){
                 textIsDisplayedAndEnabled("How It Works", mainPageHeaderAndCustomPrint.howItWorks);
@@ -57,6 +58,8 @@ public class MainPageHeaderAndCustomPrintSteps extends Base {
             else if(value.equals(mainPageHeaderAndCustomPrint.bringYourTee.getText())){
                 textIsDisplayedAndEnabled("Bring Your Own Tee", mainPageHeaderAndCustomPrint.bringYourTee);
             }
+
+            waitSomeTime(3000L);
 
             imageIsDisplayedAndEnabled(mainPageHeaderAndCustomPrint.cartIcon);
 
